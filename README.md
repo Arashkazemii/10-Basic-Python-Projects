@@ -1,5 +1,5 @@
 <p align="center" width="100%">
-    <img width="80%" border='1px' height='800px' src="Images\BPP02.png">
+    <img width="70%" border='1px' src="Images\BPP02.png">
 </p>
 
 ---
