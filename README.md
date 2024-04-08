@@ -10,11 +10,11 @@ This repository contains 10 basic Python projects suitable for beginners. Each p
 
 ## Project List
 
-1. Project 1: Simple Calculator
+1. Project 1: Countdown Timer
 2. Project 2: To-Do List Application
 3. Project 3: Guess the Number Game
-4. Project 4: Rock, Paper, Scissors Game
-5. Project 5: Tic-Tac-Toe Game
+4. Project 4: Screenshot Taker
+5. Project 5: Extract Audio from Video (Mp4 tp Mp3)
 6. Project 6: Temperature Converter
 7. Project 7: Simple Text Editor
 8. Project 8: Basic Web Scraper
