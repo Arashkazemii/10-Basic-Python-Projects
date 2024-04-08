@@ -25,11 +25,13 @@ This repository contains 10 basic Python projects suitable for beginners. Each p
 
 To use any of the projects in this repository, follow these steps:
 
-1. Clone the repository to your local machine:
-   ```git clone https://github.com/Arashkazemii/10-Basic-Python-Projects.git```
+1. Clone the repository to your local machine: <br />
+   ```Git
+   git clone https://github.com/Arashkazemii/10-Basic-Python-Projects.git
    
-3. Navigate to the project directory:
-   ```cd 10-basic-python-projects```
+3. Navigate to the project directory: <br />
+   ```Git
+   cd 10-basic-python-projects
    
 5. Choose the project you want to explore and navigate to its directory.
 
