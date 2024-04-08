@@ -1,6 +1,3 @@
-<p align="center" width="100%">
-    <img width="30%" border='1px' src="..\..\Images\Countdown.png">
-</p>
 
 # Countdown Timer
 
