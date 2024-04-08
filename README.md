@@ -47,4 +47,4 @@ Contributions to this repository are welcome. If you have any ideas for new proj
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for details.
