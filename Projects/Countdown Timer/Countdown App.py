@@ -5,11 +5,11 @@ def update_timer():
     global t
     if t > 0:
         minutes, seconds = divmod(t, 60)
-        timer_label.config(text='{0:02d}:{1:02d}'.format(minutes, seconds))
+        timer_label.config(text='{0:02d}:{1:02d}'.format(minutes, seconds), font=("Arial", 24, "bold"), foreground="black")
         t -= 1
         root.after(1000, update_timer)
     else:
-        timer_label.config(text="Time's up!")
+        timer_label.config(text="Time's up!", font=("Arial", 24, "bold"), foreground="red")
 
 def start_countdown():
     global t
@@ -22,21 +22,27 @@ def stop_countdown():
 
 root = tk.Tk()
 root.title("Countdown Timer")
-root.geometry("400x200")  
+root.geometry("400x200")
+root.configure(background="#f0f0f0")  
 
-label = tk.Label(root, text="Enter Number:")
-label.pack()
+label = tk.Label(root, text="Enter Number:", background="#f0f0f0", font=("Arial", 12, "bold"), foreground="black")
+label.grid(row=0, column=0, pady=5, padx=5, sticky="nsew")
 
-entry = tk.Entry(root)
-entry.pack()
+entry = tk.Entry(root, font=("Arial", 12, "bold"), bd=2, relief="solid")
+entry.grid(row=0, column=1, pady=5, padx=5, sticky="nsew")
 
-start_button = tk.Button(root, text="Start Countdown", command=start_countdown)
-start_button.pack()
+start_button = tk.Button(root, text="Start", command=start_countdown, font=("Arial", 12, "bold"), bg="#f0f0f0", fg="black", bd=2, relief="solid", padx=10, pady=5)
+start_button.grid(row=1, column=0, pady=5, padx=5, sticky="nsew")
 
-stop_button = tk.Button(root, text="Stop", command=stop_countdown)
-stop_button.pack()
+stop_button = tk.Button(root, text="Stop", command=stop_countdown, font=("Arial", 12, "bold"), bg="#f0f0f0", fg="black", bd=2, relief="solid", padx=10, pady=5)
+stop_button.grid(row=1, column=1, pady=5, padx=5, sticky="nsew")
 
-timer_label = tk.Label(root, text="", font=("Helvetica", 48))
-timer_label.pack()
+timer_label = tk.Label(root, text="", font=("Arial", 24, "bold"), background="#f0f0f0")
+timer_label.grid(row=2, column=0, columnspan=2, pady=10, padx=5, sticky="nsew")
+
+root.grid_rowconfigure(0, weight=1)
+root.grid_rowconfigure(1, weight=1)
+root.grid_columnconfigure(0, weight=1)
+root.grid_columnconfigure(1, weight=1)
 
 root.mainloop()
