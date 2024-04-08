@@ -7,7 +7,6 @@ root.title("ScreenshotTaker")
 num = 0
 def takeScreenshot():
     image = pyscreenshot.grab()
-    image.save("\\Screenshots Images\\screenshotname.png")
     image.show()
     
 button = Button(root, text = "Take Screenshot", command = takeScreenshot)
