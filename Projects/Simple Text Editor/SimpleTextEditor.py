@@ -2,8 +2,15 @@ from tkinter import *
 import tkinter as tk
 from tkinter import filedialog
 import random
+from tkinter import messagebox
 
 def openFile():
+    if len(editor.get('1.0', END)) > 0:
+        response = messagebox.askyesnocancel("Save Changes", "Do you want to save changes?")
+        if response is None:
+            return
+        elif response:
+            saveFile()
     file_path = filedialog.askopenfilename()
     if file_path:
         with open(file_path, 'r') as file:
@@ -17,6 +24,12 @@ def saveFile():
             file.write(editor.get('1.0', END))
 
 def newFile():
+    if len(editor.get('1.0', END)) > 0:
+        response = messagebox.askyesnocancel("Save Changes", "Do you want to save changes?")
+        if response is None:
+            return
+        elif response:
+            saveFile()
     editor.delete('1.0', END)
 
 
