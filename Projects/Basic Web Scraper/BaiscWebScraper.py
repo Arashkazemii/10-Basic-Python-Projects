@@ -31,6 +31,6 @@ class WebScraper:
         self.extract_information(html_content)
 
 # Usage example
-url = 'https://example.com'
-scraper = WebScraper(url)
-scraper.scrape()
+# url = 'https://example.com'
+# scraper = WebScraper(url)
+# scraper.scrape()
